@@ -1,4 +1,4 @@
-package Factory_Method;
+package creational.factory_method;
 
 public class TextMessage extends Message {
 

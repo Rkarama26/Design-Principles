@@ -1,9 +1,9 @@
-package behavioral;
+package behavioral.observer;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class ConcreateSubject implements Subject{
+public class ConcreateSubject implements Subject {
 
     private List<Observer> observers;
     private float temprature;

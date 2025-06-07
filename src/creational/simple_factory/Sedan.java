@@ -1,4 +1,4 @@
-package simple_factory;
+package creational.simple_factory;
 
 public class Sedan extends Car{
 
@@ -7,6 +7,10 @@ public class Sedan extends Car{
 
     public String sedanType;
 
+    public Sedan() {
+        this.sedanModel = 345678;
+        this.sedanType = "BMW";
+    }
 
     public int getSedanModel() {
         return sedanModel;

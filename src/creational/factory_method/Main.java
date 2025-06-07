@@ -1,4 +1,4 @@
-package Factory_Method;
+package creational.factory_method;
 
 public class Main {
 
@@ -11,6 +11,6 @@ public class Main {
 
     public static void printMessage(MessageCreator creator){
         Message msg = creator.getMessage();
-        System.out.println(msg);
+        System.out.println(msg.getContent());
     }
 }

@@ -1,4 +1,4 @@
-package simple_factory;
+package creational.simple_factory;
 
 public class Mini extends Car{
 

@@ -1,4 +1,4 @@
-package lld_Problems.documentEditor;
+package lld_Problems.documentEditor.problem;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;

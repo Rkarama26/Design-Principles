@@ -90,8 +90,27 @@ public abstract class Robot {
 
     abstract void projection();
 
-}
 
+    public static void main(String[] args) {
+       Robot robot1 = new CampanionRobot(new NormalFly(), new NormalTalk(), new NormalWalk());
+       robot1.talk();
+       robot1.walk();
+       robot1.fly();
+       robot1.projection();
+
+
+        System.out.println("-------------------------------------");
+
+       Robot robot2 = new Worker(new NotFly(), new NotTalk(), new NotWalk());
+       robot2.walk();
+       robot2.talk();
+       robot2.fly();
+       robot2.projection();
+
+
+    }
+}
+// concrete implementation of Robot
 class CampanionRobot extends Robot{
 
     public CampanionRobot(Flyable flyable, TalkableRobot talkableRobot, WalkableRobot walkableRobot) {
@@ -104,6 +123,7 @@ class CampanionRobot extends Robot{
     }
 }
 
+// concrete implementation of Robot
 class Worker extends Robot{
 
     public Worker(Flyable flyable, TalkableRobot talkableRobot, WalkableRobot walkableRobot) {

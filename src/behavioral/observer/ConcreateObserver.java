@@ -1,6 +1,6 @@
-package behavioral;
+package behavioral.observer;
 
-public class ConcreateObserver implements Observer{
+public class ConcreateObserver implements Observer {
 
     private float temprature;
     private float humidity;

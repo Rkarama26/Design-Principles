@@ -1,2 +1,22 @@
-package creational.abstract_factory;public class MacButton {
+package creational.abstract_factory;
+
+import creational.abstract_factory.product.Button;
+
+public class MacButton implements Button {
+
+
+    public String name() {
+        return "Mac_Button";
+    }
+
+    @Override
+    public void paint(String colorCode, boolean filled) {
+
+        System.out.println("Button of Color: "+colorCode+ "filled: " +filled);
+    }
+
+    @Override
+    public void size(int h, int w) {
+        System.out.println("Button of size: " + h + " and " +w);
+    }
 }

@@ -2,14 +2,22 @@ package creational.abstract_factory;
 
 import creational.abstract_factory.product.Button;
 
-public class WinFactory implements Button {
-    @Override
-    public void paint() {
-        System.out.println("Button of blue color");
+public class WinButton implements Button {
+
+    public String name() {
+        return "Win_Button";
     }
 
     @Override
-    public void size() {
-        System.out.println("Button size 2*3 ");
+    public void paint(String colorCode, boolean filled) {
+
+        System.out.println("Button of Color: " + colorCode + "filled: " + filled);
+
+    }
+
+    @Override
+    public void size(int h, int w) {
+        System.out.println("Button of size: " + h + " and " + w);
+
     }
 }

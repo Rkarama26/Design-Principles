@@ -1,7 +1,4 @@
-package prototype;
-
-import java.awt.geom.Point2D;
-
+package creational.prototype;
 
 
 //Prototype Class

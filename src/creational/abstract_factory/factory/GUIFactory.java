@@ -1,4 +1,4 @@
-package creational.abstract_factory;
+package creational.abstract_factory.factory;
 
 import creational.abstract_factory.product.Button;
 import creational.abstract_factory.product.CheckBox;
